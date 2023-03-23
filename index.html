@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earthbound</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main id="background">
+
+        <img src="attack-animations/PSI Gaming_1.gif" class="animationGif hidden" alt="">
+
+        <img src="attack-animations/PSI Fire_1.gif" class="animationGifFire hidden" alt="">
+
+        <img src="attack-animations/PSI Freeze_1.gif" class="animationGifFreeze hidden" alt="">
+
+        <img src="attack-animations/PSI Thunder_1.gif" class="animationGifThunder hidden" alt="">
+
+        <!-- Main menu -->
+        <ul class="textBoxMain">
+            <li id="attackRegular">Attack</li>
+            <li>Defend</li>
+            <li id="itemKnop">Items</li>
+            <li id="psiKnop">PSI</li>
+            <li id="runKnop">Run</li>
+        </ul>
+
+        <!-- Text when i win -->
+        <div class="hidden" id="textBoxWin">
+            <p class="center"> You win!</p>
+        </div>
+
+        <!-- Text when i lose -->
+        <div class="hidden" id="textBoxLose">
+            <p class="center"> You lose!</p>
+        </div>
+
+        <!-- Textbox when I attack -->
+        <ul class="hidden" id="myDialogueBox">
+            <li>You smacked the Starman! <span id="myDamageOutput"></span> damage!</li>
+        </ul>
+
+        <!-- Item inner menu -->
+        <div id="itemOptions" class="hidden">
+            <button class="backButton" onclick="terugNaarMenuItem()">back</button>
+            <ul>
+                <li>Slingshot</li>
+                <li>Casey bat</li>
+                <li>Hamburger</li>
+            </ul>
+        </div>
+
+        <!-- Text when i run -->
+        <div id="runOptions" class="hidden">
+            <p class="center">Only a fool runs away from their enemy</p>
+        </div>
+
+        <!-- PSI inner menu -->
+        <div id="psiOptions" class="hidden">
+            <button class="backButton" onclick="terugNaarMenuPSI()">back</button>
+            <ul>
+                <li id="psiGaming">Gaming</li>
+                <li id="psiFire">Fire</li>
+                <li id="psiFreeze">Freeze</li>
+                <li id="psiThunder">Thunder</li>
+                <li id="psiShield">Shield</li>
+            </ul>
+        </div>
+        <img src="image/starman-jr.png" alt="starman" id="starmanJr">
+        <ul id="healthAndPSI">
+            <li>Health <span id="healthNumber">69</span></li>
+            <li>PP <span id="psiNumber">20</span></li>
+        </ul>
+    </main>
+
+    <!-- audio fragmenten -->
+    <audio id="backgroundMusic" loop src="audio/backgroundmusic.mp3"></audio>
+    <audio id="winMusic" loop src="audio/youwin.mp3"></audio>
+    <audio id="loseMusic" loop src="audio/youlose.mp3"></audio>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+<!-- 
+
+Bronvermelding:
+
+Afbeelding Starman: Earthbound
+Muziek: Muziek: Keiichi Suzuki Hirokazu Tanaka - Sanctuary Guardian
+
+-->
